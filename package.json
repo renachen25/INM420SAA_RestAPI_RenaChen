@@ -1,0 +1,15 @@
+{
+  "name": "inm420saa_restapi_renachen",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server --baseDir=\"base\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "private",
+  "description": "",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
