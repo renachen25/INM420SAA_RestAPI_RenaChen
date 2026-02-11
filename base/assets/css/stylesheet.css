@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 24px;
+    background: #f7f7f7;
+  }
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  /* Search bar */
+  .search-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .search-container input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .search-container button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+/* Results grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .game-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+  }
+  
+  .game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .game-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .game-info p {
+    margin: 0;
+    font-weight: bold;
+    color: #2a7a2a;
+  }
+  
+  .game-info img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
