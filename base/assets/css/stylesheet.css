@@ -1,70 +1,121 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 24px;
-    background: #f7f7f7;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 100vh;
+}
 
-  h1 {
-    margin-bottom: 16px;
-  }
+h1 {
+  margin-bottom: 16px;
+  font-family: "Rubik 80s Fade";
+  color: #5ce0d7;
+}
 
-  /* Search bar */
-  .search-container {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 32px;
-  }
+/* Search bar */
+.search-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  border-radius: 12px;
+}
 
-  .search-container input {
-    flex: 1;
-    padding: 12px;
-    font-size: 16px;
-  }
+.search-container input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+}
 
-  .search-container button {
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-/* Results grid */
+.search-container button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* Search Results */
 .results-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .game-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    background: white;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    gap: 16px;
-  }
-  
-  .game-info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .game-info h3 {
-    margin: 0;
-    font-size: 18px;
-  }
-  
-  .game-info p {
-    margin: 0;
-    font-weight: bold;
-    color: #2a7a2a;
-  }
-  
-  .game-info img {
-    width: 100%;
-    border-radius: 6px;
-    object-fit: cover;
-  }
-  
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.game-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.123);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: 16px;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.game-info h3 {
+  font-family: "Special Elite";
+  margin: 0;
+  font-size: 18px;
+  color: azure
+}
+
+.game-info p {
+  margin: 0;
+  font-weight: bold;
+  color: #f388ae;
+  font-size: 12px;
+}
+
+.game-info img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.game-basic {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.game-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* View Top Reviews Button */
+.reviews-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #000000;
+  color: azure;
+  border-radius: 8px;
+  width: 65%;
+  height: 30%;
+}
+
+.img-button {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.review h4 {
+  color: #f4ffbf;
+}
+
+.review p {
+  color: azure;
+  font-weight: 200;
+}
